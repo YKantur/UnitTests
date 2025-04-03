@@ -1,7 +1,7 @@
-from linked_list import CircularSinglyLinkedList
+from array_list import ArrayBasedList
 
 if __name__ == "__main__":
-    my_list = CircularSinglyLinkedList()
+    my_list = ArrayBasedList()
 
     my_list.append('A')
     my_list.append('B')
