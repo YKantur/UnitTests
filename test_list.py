@@ -90,9 +90,5 @@ class TestCircularSinglyLinkedList(unittest.TestCase):
         self.list.clear()
         self.assertEqual(self.list.length(), 0)
 
-    def test_fail_example(self):
-        self.assertEqual(1, 2)  # Завжди падає
-
-
 if __name__ == '__main__':
     unittest.main()
