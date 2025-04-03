@@ -1,0 +1,19 @@
+name: Run Unit Tests
+
+on: [push, pull_request]  # Запускається при кожному пуші чи PR
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout репозиторію
+        uses: actions/checkout@v3
+
+      - name: Встановлення Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'
+
+      - name: Запуск тестів
+        run: python -m unittest test_list.py
